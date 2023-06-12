@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="img/dstore.png" type="image/x-icon">
+    <title>DStore</title>
+</head>
+<header>
+    <div class="container-fluid" id="BarraNAV">
+        <div class="row">
+            <div class="col-sm-2 m-auto">
+                <img src="img/dstore.png" id="logoPagina" alt="Logo da Adidas">
+            </div>
+            <div class="col-sm-6 justify-content-center">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <span class="m-2 bemVindo"><strong>Seja bem-vindo!</strong></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-11">
+                        <form class="d-flex me-5" role="search" id="searchForm">
+                            <input class="form-control mr-3" type="search" placeholder="Digite aqui" aria-label="Search" id="searchInput">
+                            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 linksNav">
+                <div class="row">
+                    <nav class="nav col-sm-12 justify-content-around linksNAVB">
+                      <ul class="nav-list">
+                        <li><a class="nav-link active" href="home.html">Inicio</a></li>
+                        <li><a class="nav-link disabled" href="#">Login</a></li>
+                        <li><a class="nav-link disabled" href="#">Cadastro</a></li>
+                        <li id="acomPDDO"><a class="nav-link disabled" href="#">Acompanhar Pedido</a></li>
+                      </ul>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 justify-content-around" id="Icarrinho">
+                        <a href="#">
+                            <i class="bi bi-cart2" style="font-size: 2em;"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 FaleConosco" style="font-size: 10px;">
+                        <span>Pague na Entrega</span><br>
+                        <span>30 dias de Retorno</span><br>
+                        <span>Suporte 24/7</span><br>
+                        <span>Fale Conosco: <strong>31 4002-8922</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="container" id="cordefundoDIV">
+        <div class="row justify-content-center" id="carrosel">
+            <div class="col-sm-12 col-md-12 mt-2">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" id="carroselIndicadores" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" class="carroselIndicadores" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" class="carroselIndicadores" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="img/atletico mineiro.jpg"  class="img1" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                        <img src="img/tashaEtracie.png"  class="img1" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                        <img src="img/Kyan.jpg"  class="img1" class="d-block" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" class="butaoCarrosel" data-bs-target="#carouselExampleAutoplaying"       data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" class="butaoCarrosel" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="container bg-light m-auto">
+        <div class="row row-cols-3" id="cardsProdutos">
+            <!-- <div class="col-sm-3 cardVND">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mt-2 m-auto">
+                                <a href="pesquisa.html" target="_blank"><img src="img/camisaCAM.webp" class="card-img-top" alt="Camisa Atletico-MG"></a>
+                                <div class="card-body">
+                                    <h5 class="card-title">Camisa 2 Atletico-MG - 22/23</h5>
+                                    <p class="card-text">R$ 299,99</p>
+                                    <a href="#" class="btn btn-dark">COMPRAR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mt-2 m-auto">
+                                <img src="img/adidasMicrobounce.jpg" class="card-img-top" alt="Camisa Atletico-MG">
+                                <div class="card-body">
+                                    <h5 class="card-title">Microbounce T1</h5>
+                                    <p class="card-text">R$ 2465,00</p>
+                                    <a href="#" class="btn btn-dark">COMPRAR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mt-2 m-auto">
+                                <img src="img/boneADIDAS.jpg" class="card-img-top" alt="Camisa Atletico-MG">
+                                <div class="card-body">
+                                    <h5 class="card-title">Boné Aerorady Branco</h5>
+                                    <p class="card-text">R$ 129,99</p>
+                                    <a href="#" class="btn btn-dark">COMPRAR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-sm-3 cardVND">
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mt-2 m-auto">
+                                <img src="img/camisaREAL.jpg" class="card-img-top" alt="Camisa Real Madrid">
+                                <div class="card-body">
+                                    <h5 class="card-title">Camisa 3 Real Madrid - 17/18</h5>
+                                    <p class="card-text">R$ 350,00</p>
+                                    <a href="#" class="btn btn-dark">COMPRAR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mt-2 m-auto">
+                                <img src="img/yeezy.jpg" class="card-img-top" alt="Camisa Atletico-MG">
+                                <div class="card-body">
+                                    <h5 class="card-title">Yeezy Slide Bege</h5>
+                                    <p class="card-text">R$ 499,90</p>
+                                    <a href="#" class="btn btn-dark">COMPRAR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mt-2 m-auto">
+                                <img src="img/boneADIDAS3.jpg" class="card-img-top" alt="Camisa Atletico-MG">
+                                <div class="card-body">
+                                    <h5 class="card-title">Boné C40</h5>
+                                    <p class="card-text">R$ 99,99</p>
+                                    <a href="#" class="btn btn-dark">COMPRAR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-sm-3 cardVND">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mt-2 m-auto">
+                                <img src="img/camisaARSENAL.jpg" class="card-img-top" alt="Camisa Arsenal">
+                                <div class="card-body">
+                                    <h5 class="card-title">Camisa 1 Arsenal - 22/23</h5>
+                                    <p class="card-text">R$ 349,99</p>
+                                    <a href="#" class="btn btn-dark">COMPRAR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="row">
+                    <div class="col">
+                        <div class="card mt-2 m-auto">
+                            <img src="img/TNSadidas.png" class="card-img-top" alt="Camisa Atletico-MG">
+                            <div class="card-body">
+                                <h5 class="card-title">Jaqueta Adidas Branca</h5>
+                                <p class="card-text">R$ 269,00</p>
+                                <a href="#" class="btn btn-dark">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card mt-2 m-auto">
+                            <img src="img/boneADIDAS2.jpg" class="card-img-top" alt="Camisa Atletico-MG">
+                            <div class="card-body">
+                                <h5 class="card-title">Bone RUN RT</h5>
+                                <p class="card-text">R$ 149,99</p>
+                                <a href="#" class="btn btn-dark">COMPRAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- <div class="col-sm-3 cardVND">
+                        <div class="row" id="cardsMAISVND">
+                            <div class="container">
+                                <span class="text-center">ITENS MAIS VENDIDOS</span>
+                            </div>
+                        </div>
+                            <div class="row row-cols-auto">
+                                <div class="col">
+                                    <div class="card bg-light m-auto">
+                                        <img src="img/adidasMicrobounce.jpg" class="card-img-top" alt="Microbounce T1">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Microbounce T1</h6>
+                                            <p class="card-text">R$ 2465,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row row-cols-auto">
+                                <div class="col">
+                                    <div class="card bg-light m-auto">
+                                        <img src="img/tenisJH.webp" class="card-img-top" alt="JH Preto/Azul">
+                                        <div class="card-body">
+                                            <h6 class="card-title">James Harden Preto/Azul</h6>
+                                            <p class="card-text">R$ 599,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row row-cols-auto">
+                                <div class="col">
+                                    <div class="card bg-light m-auto">
+                                        <img src="img/camisaJUV.webp" class="card-img-top" alt="Camisa Juventus 19/20">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Camisa Juventus 19/20</h6>
+                                            <p class="card-text">R$ 230,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row row-cols-auto">
+                                <div class="col">
+                                    <div class="card bg-light m-auto">
+                                        <img src="img/jaquetaJAPAO.jpg" class="card-img-top" alt="Jaqueta Japão">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Jaqueta Japão</h6>
+                                            <p class="card-text">R$ 330,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row row-cols-auto">
+                                <div class="col">
+                                    <div class="card bg-light m-auto">
+                                        <img src="img/jaquetaREAL.webp" class="card-img-top" style="width: 100%;" alt="Jaqueta Real Madrid">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Jaqueta Real Madrid</h6>
+                                            <p class="card-text">R$ 450,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mx-2 border border-light bg-success m-auto">
+                                <div class="col mb-5">
+                                    <p><strong>Boletim de Noticias</strong></p>
+                                    <p><strong>Inscreva-se no boletim informativo</strong></p>
+                                    <input type="text" class="input-group-sm" id="inputInfo">
+                                    <button type="button" class="btn btn-primary btn-sm">Pesquisar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div> -->
+                
+    </main>
+    <footer>
+        <div class="container-fluid" style="color: white">
+        <div class="row" id="formadePGMT">
+            <div class="col-sm-3 ml-0">
+            <p><strong>Metodos de Pagamento</strong></p>
+            <ul><a href="#"><img src="img/visa.png" alt=""></a></ul>
+            <ul><a href="#"><img src="img/icons8-logótipo-da-mastercard-24.png" alt=""></a></ul>
+            <ul><a href="#"><img src="img/expresso-americano.png" alt=""></a></ul>
+            <ul><a href="#"><img src="img/pagamento-online (1).png" alt=""></a></ul>
+            <ul><a href="#"><img src="img/mastercard.png" alt=""></a></ul>
+            </div>
+            <div class="col-sm-3 ml-0">
+            <p><strong>Links Rapidos</strong></p>
+            <ul>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Politica de Envio</a></li>
+                <li><a href="#">Cancelamento e Devoluções</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Politica de Privacidade</a></li>
+                <li><a href="#">Responsabilidade</a></li>
+            </ul>
+            </div>
+            <div class="col-sm-3 ml-0">
+            <p><strong>Sociais</strong> </p>
+            <ul style="display: inline-block;">
+                <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="bi bi-google"></i> Google</a></li>
+            </ul>
+            </div>
+            <div class="col-sm-3 ml-0">
+            <p><strong>Contate-nos</strong></p>
+            <ul>
+                <li><span>Endereço Invalido</span></li>
+                <li><span>Sem Rua</span></li>
+                <li><span>Sem Lugar</span></li>
+                <li><span><i class="bi bi-envelope-fill"></i> @info@company.com</span></li>
+                <li><span><i class="bi bi-telephone-fill"></i> 4002 8922</span></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+            <div>
+                <p id="footerFINAL"><i class=""></i>Diego Rodrigues da Cruz</span>
+                <p id="footerFINAL"><i class=""></i>Matricula: 816674  Curso: Análise e Desenvolvimento de Sistemas</span>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
+    integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
+    crossorigin="anonymous"></script>
+    <script src="js/pesquisa.js"></script>
+    <script src="js/detalhes.js"></script>
+</body>
+    
+</html>
+
